@@ -7,7 +7,7 @@ body {
 }
 
 .countainer {
-    margin: 3%;
+    background-color: #fff;
 }
 
 .primary {
@@ -18,7 +18,7 @@ body {
 
 .cards {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
     perspective: 99rem;
@@ -36,7 +36,7 @@ body {
     color: aliceblue;
     border-radius: 8px;
     padding: 0px 18px;
-    width: 244px;
+    width: 366px;
     transition: 0, 5s ease;
     overflow: hidden;
     transform: translate(0);
@@ -107,17 +107,91 @@ body {
     background: linear-gradient(90deg, #567ebb 0%, #2b4c7e 100%);
 }
 
-/* .button {
-    background: #6f6cff;
-    padding: 8px 16px;
-    border: 0;
-    border-radius: 4px;
-    color: white;
-    font-weight: bold;
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#my-text {
-    color: hwb(251 2% 69%);
-    font-size: 32px;
-    font-weight: bold;
-} */
+.links a{
+    margin: 3% 5% 1% 5%;
+}
+
+.links a:hover{
+    transform: scale(1.25);
+}
+
+/* Buttons */
+
+.btn{
+    margin: 2%;
+    /* margin-bottom: -0rem;
+    margin-top: -0rem; */
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.btn-primary{
+    background-color: #0d6efd;
+    border: 15px solid #0d6efd;
+    border-radius: 8%;
+    color: #fff;
+}
+
+.btn-secundary{
+    background-color: #51585e;
+    border: 15px solid #51585e;
+    border-radius: 8%;
+    color: #fff;
+}
+
+.btn-success {   
+    background-color: #13653f;
+    border: 15px solid #13653f;
+    border-radius: 8%;
+    color: #fff;
+}
+
+.btn-warning{
+    background-color: #ffc720;
+    border: 15px solid #ffc720;
+    border-radius: 8%;
+    color: #000000;
+}
+
+.btn-danger{
+    background-color: #b02a37;
+    border: 15px solid #b02a37;
+    border-radius: 8%;
+    color: #fff;
+}
+
+.btn-info{
+    background-color: #25cff2;
+    border: 15px solid #25cff2;
+    border-radius: 8%;
+    color: #000000;
+}
+
+.btn-ligth{
+    background-color: #c6c7c8;
+    border: 15px solid #c6c7c8;
+    border-radius: 8%;
+    color: #000000;
+}
+
+.btn-dark{
+    background-color: #373b3e;
+    border: 15px solid #373b3e;
+    border-radius: 8%;
+    color: #fff;
+}
+
+.btn-dark{
+    background-color: #373b3e;
+    border: 15px solid #373b3e;
+    border-radius: 8%;
+    color: #fff;
+}

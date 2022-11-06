@@ -1,0 +1,46 @@
+.form {
+    margin-left: 5%;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.mb-3 {
+    display: inline-flex;
+}
+
+.alert-success {
+    color: #008000;
+}
+
+.alert-error {
+    color: red;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 3%;
+    table-layout: auto;
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+th{
+    border: 1px solid #000000;
+}
+
+td{
+    border: 1px solid #000000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+
