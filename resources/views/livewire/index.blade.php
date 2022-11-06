@@ -2,6 +2,14 @@
     <div class="primary">
         <h1>Biblioteca de Estudos</h1>
     </div>
+
+    <div class="links">
+        <a href="{{ route('books.index') }}">Livros</a>
+        <a href="{{route('generos.index')}}">Gêneros</a>
+        <a href="#">Autores</a>
+        <a href="#">Contato</a>
+    </div>
+    <hr>
     <div class="cards">
         <div class="transform">
             <div class="card card1">
