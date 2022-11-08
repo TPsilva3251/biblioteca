@@ -4,10 +4,13 @@ namespace App\Http\Livewire;
 
 use App\Models\Genres;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Generos extends Component
 {
-    public $teste = 'Página de Gêneros!';
+    use WithPagination;
+
+    public $title = 'Gêneros';
 
     public $content = '';
 
@@ -22,7 +25,7 @@ class Generos extends Component
     ];
     public function render()
     {
-        $generos = Genres::get();
+        $generos = Genres::paginate(6);
         
         return view('livewire.generos',compact('generos'));
     }
@@ -34,7 +37,19 @@ class Generos extends Component
         Genres::create([
             'name' => $this->content,
         ]);
-        session()->flash('message', 'Post successfully updated.');
+        session()->flash('message', 'Registro criado com sucesso.');
         $this->content = '';
+    }
+
+    public function edit($id)
+    {
+        $genero=Genres::find($id);
+        dd($genero);
+    }
+
+    public function delete($id)
+    {
+        Genres::where('id', $id)->delete();
+        session()->flash('message', 'Registro deletado com sucesso.');
     }
 }
